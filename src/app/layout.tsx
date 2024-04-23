@@ -15,7 +15,7 @@ export const metadata = {
 
 function TopNav() {
   return (
-    <nav className="flex w-full items-center justify-between border-b p-4 text-xl font-semibold">
+    <nav className="flex w-full items-center justify-between border-b p-4 text-xl font-semibold md:px-16">
       <div>T3Gallery</div>
       <div>Sign In</div>
     </nav>
