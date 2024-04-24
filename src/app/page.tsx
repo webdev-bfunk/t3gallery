@@ -1,12 +1,11 @@
 import { SignedIn, SignedOut } from "@clerk/nextjs";
 import { db } from "~/server/db";
+import { getMyImages } from "~/server/queries";
 
 export const dynamic = "force-dynamic";
 
 async function Images() {
-  const images = await db.query.images.findMany({
-    orderBy: (model, { desc }) => desc(model.id),
-  });
+  const images = await getMyImages();
   return (
     <>
       <h1 className="p-4 text-center text-3xl font-extrabold">Your Images</h1>
