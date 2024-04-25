@@ -1,5 +1,4 @@
 import { SignedIn, SignedOut } from "@clerk/nextjs";
-import { db } from "~/server/db";
 import { getMyImages } from "~/server/queries";
 
 export const dynamic = "force-dynamic";
