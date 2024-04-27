@@ -8,7 +8,7 @@ export function TopNav() {
   const router = useRouter();
 
   return (
-    <nav className="flex w-full items-center justify-between border-b p-4 text-xl font-semibold md:px-16">
+    <nav className="flex w-full items-center justify-between border-b p-4 text-xl font-semibold ">
       <div className="text-3xl font-extrabold text-sky-400">
         <Link href="/">T3Gallery</Link>
       </div>

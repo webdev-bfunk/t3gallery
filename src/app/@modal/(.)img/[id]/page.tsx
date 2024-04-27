@@ -1,4 +1,4 @@
-import FullPageImageView from "~/components/full-image-page";
+import { FullPageImageView } from "~/components/full-image-page";
 import { Modal } from "./modal";
 
 export default function PhotoModal({
@@ -11,7 +11,7 @@ export default function PhotoModal({
 
   return (
     <Modal>
-      <FullPageImageView id={idAsNumber} />
+      <FullPageImageView photoId={photoId} />
     </Modal>
   );
 }
